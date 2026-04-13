@@ -1,7 +1,7 @@
 // import ProductCard from "@/components/ProductCard";
 import ProductCard from "@/components/ProductCard";
 import { getAllProducts } from "@/lib/products";
-import { HomeQRCode } from "@/components/HomeQRCode";
+import HomeQRCode from "@/components/HomeQRCode";
 
 export const dynamic = "force-dynamic";
 
