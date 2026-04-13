@@ -1,0 +1,786 @@
+{
+    id: 1,
+    kind: "Instance",
+    global_product_id: "urn:example:product:ur:ur3:SN-UR3-0001",
+    manufacturer_name: "Universal Robots",
+    model: "UR3e",
+    serial_number: "SN-UR3-0001",
+    year_of_construction: null,
+    product_family: "Collaborative Robot UR Series",
+    country_of_origin: "Denmark",
+    created_at: ISODate("2026-03-06T15:54:40.987Z"),
+    image_uri: "/images/ur3e.webp",
+    digital_nameplate: {
+      manufacturer_name: "Universal Robots",
+      serial_number: "SN-UR3-0001",
+      year_of_construction: null,
+      product_family: "Collaborative Robot UR Series",
+      country_of_origin: "Denmark"
+    },
+    bom_components: [
+      {
+        component_name: "UR3e Robot Arm",
+        quantity: 1,
+        unit: null,
+        notes: null,
+        parent_component_ref: null,
+        component_ref: null
+      },
+      {
+        component_name: "e-Series Control Box",
+        quantity: 1,
+        unit: null,
+        notes: null,
+        parent_component_ref: null,
+        component_ref: null
+      },
+      {
+        component_name: "12\" Teach Pendant (PolyScope)",
+        quantity: 1,
+        unit: null,
+        notes: null,
+        parent_component_ref: null,
+        component_ref: null
+      },
+      {
+        component_name: "Arm cable and pendant cable",
+        quantity: 1,
+        unit: null,
+        notes: null,
+        parent_component_ref: null,
+        component_ref: null
+      },
+      {
+        component_name: "Robotiq 2F-140 Gripper",
+        quantity: 1,
+        unit: null,
+        notes: "Componente com DPP próprio na mesma BD",
+        parent_component_ref: null,
+        component_ref: {
+          product_id: 2,
+          global_product_id: "urn:example:product:robotiq:2f-140"
+        }
+      }
+    ],
+    carbon_footprint: [
+      {
+        footprint_kind: "PCF",
+        lifecycle_stage: "Manufacturing",
+        emission_value: null,
+        unit: "kg CO2e",
+        standard: "ISO 14067",
+        boundary: null,
+        reference_period_start: null,
+        reference_period_end: null,
+        method_details: {}
+      },
+      {
+        footprint_kind: "PCF",
+        lifecycle_stage: "Transport",
+        emission_value: null,
+        unit: "kg CO2e",
+        standard: "ISO 14067",
+        boundary: null,
+        reference_period_start: null,
+        reference_period_end: null,
+        method_details: {}
+      },
+      {
+        footprint_kind: "PCF",
+        lifecycle_stage: "Use Phase",
+        emission_value: null,
+        unit: "kg CO2e",
+        standard: "ISO 14067",
+        boundary: null,
+        reference_period_start: null,
+        reference_period_end: null,
+        method_details: {}
+      },
+      {
+        footprint_kind: "PCF",
+        lifecycle_stage: "End of Life",
+        emission_value: null,
+        unit: "kg CO2e",
+        standard: "ISO 14067",
+        boundary: null,
+        reference_period_start: null,
+        reference_period_end: null,
+        method_details: {}
+      }
+    ],
+    circularity: {
+      recyclability_rate: null,
+      recycled_content: null,
+      reused_content: null,
+      repairability_score: null,
+      circularity_index: null,
+      notes: "SUBSTITUIR: notas sobre modularidade/reciclabilidade"
+    },
+    contacts: [
+      {
+        role_code: "Support",
+        available_time: "Mon-Fri 09:00-18:00",
+        org_name: "Universal Robots Support",
+        street: null,
+        zipcode: null,
+        region: null,
+        country: null,
+        notes: "SUBSTITUIR: dados reais do suporte/representante",
+        emails: [
+          {
+            email_address: "support@example.com",
+            email_type_code: "Support",
+            public_key: null
+          }
+        ],
+        phones: [],
+        fax: [],
+        ip_communications: []
+      },
+      {
+        role_code: "Portal",
+        available_time: null,
+        org_name: "Universal Robots Portal",
+        street: null,
+        zipcode: null,
+        region: null,
+        country: null,
+        notes: "Portal de suporte (link)",
+        emails: [],
+        phones: [],
+        fax: [],
+        ip_communications: [
+          {
+            link: "https://www.universal-robots.com/articles/",
+            channel_type: "Support portal"
+          }
+        ]
+      }
+    ],
+    documents: [
+      {
+        category: "Technical Specification",
+        title: "UR3e e-Series datasheet (link)",
+        language: "en",
+        version: null,
+        issue_date: null,
+        uri: "https://www.universal-robots.com/media/1807464/ur3e_e-series_datasheets_web.pdf",
+        mime_type: "application/pdf",
+        checksum: null,
+        notes: null
+      },
+      {
+        category: "User Manual",
+        title: "UR3e User Manual (link)",
+        language: "en",
+        version: null,
+        issue_date: null,
+        uri: "https://www.universal-robots.com/manuals/EN/PDF/SW5_20/user-manual-UR3e-PDF_online/710-943-00_UR3e_User_Manual_en_Global.pdf",
+        mime_type: "application/pdf",
+        checksum: null,
+        notes: null
+      },
+      {
+        category: "Calibration Manual",
+        title: "UR Calibration Manual (link)",
+        language: "en",
+        version: null,
+        issue_date: null,
+        uri: "https://s3-eu-west-1.amazonaws.com/ur-support-site/41410/UR%20Calibration%20Manual%20Combined%204.pdf",
+        mime_type: "application/pdf",
+        checksum: null,
+        notes: null
+      },
+      {
+        category: "Support Page",
+        title: "Universal Robots Support Articles",
+        language: "en",
+        version: null,
+        issue_date: null,
+        uri: "https://www.universal-robots.com/articles/",
+        mime_type: "text/html",
+        checksum: null,
+        notes: null
+      }
+    ],
+    material_composition: [
+      {
+        material: "Aluminum",
+        percentage: 60,
+        recycled_percentage: 20,
+        notes: null
+      },
+      {
+        material: "Steel",
+        percentage: 25,
+        recycled_percentage: null,
+        notes: null
+      },
+      {
+        material: "Plastics",
+        percentage: 15,
+        recycled_percentage: null,
+        notes: null
+      }
+    ],
+
+    technical_properties: [
+      {
+        area: "Specifications",
+        property_name: "Reach",
+        semantic_id: null,
+        value_num: 500,
+        value_text: null,
+        unit: "mm",
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Specifications",
+        property_name: "Handling capacity (5th axis)",
+        semantic_id: null,
+        value_num: 3,
+        value_text: null,
+        unit: "kg",
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Specifications",
+        property_name: "Number of axes (manipulator)",
+        semantic_id: null,
+        value_num: 6,
+        value_text: null,
+        unit: null,
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Performance",
+        property_name: "Position repeatability",
+        semantic_id: null,
+        value_num: 0.03,
+        value_text: null,
+        unit: "mm",
+        standard_ref: "ISO 9283",
+        notes: "±0.03 mm (SUBSTITUIR se necessário)"
+      },
+      {
+        area: "Physical",
+        property_name: "Weight",
+        semantic_id: null,
+        value_num: 11.1,
+        value_text: null,
+        unit: "kg",
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Environment",
+        property_name: "Degree of protection",
+        semantic_id: null,
+        value_num: null,
+        value_text: "IP54",
+        unit: null,
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Electrical Connections",
+        property_name: "Supply voltage",
+        semantic_id: null,
+        value_num: null,
+        value_text: "100–240 VAC, 47–440 Hz (Control Box)",
+        unit: null,
+        standard_ref: null,
+        notes: null
+      }
+    ],
+
+    supply_chain_actors: [
+      {
+        actor_code: "A1",
+        name: "Universal Robots",
+        role: "Manufacturer",
+        website: "https://www.universal-robots.com",
+        country: "Denmark",
+        notes: null
+      },
+      {
+        actor_code: "A2",
+        name: "Integrator / Lab",
+        role: "Integrator",
+        website: null,
+        country: "Portugal",
+        notes: null
+      },
+      {
+        actor_code: "A3",
+        name: "Carrier",
+        role: "Carrier",
+        website: null,
+        country: null,
+        notes: null
+      }
+    ],
+
+    locations: [
+      {
+        location_code: "L1",
+        actor_code: "A1",
+        name: "Universal Robots Manufacturing Site",
+        address: null,
+        city: "Odense",
+        region: null,
+        postal_code: null,
+        country: "Denmark",
+        lat: 55.4038,
+        lon: 10.4024
+      },
+      {
+        location_code: "L2",
+        actor_code: "A2",
+        name: "Integration Lab",
+        address: null,
+        city: "Lisbon",
+        region: null,
+        postal_code: null,
+        country: "Portugal",
+        lat: 38.7223,
+        lon: -9.1393
+      },
+      {
+        location_code: "L3",
+        actor_code: "A3",
+        name: "Carrier Hub",
+        address: null,
+        city: "Porto",
+        region: null,
+        postal_code: null,
+        country: "Portugal",
+        lat: 41.1496,
+        lon: -8.6109
+      }
+    ],
+
+    trace_events: [
+      {
+        event_time: ISODate("2026-03-01T10:00:00Z"),
+        event_type: "ObjectEvent",
+        biz_step: "manufacturing",
+        disposition: "active",
+        actor_code: "A1",
+        read_point_location_code: "L1",
+        from_location_code: null,
+        to_location_code: null,
+        related_product_id: null,
+        related_product_global_id: null,
+        quantity: null,
+        unit: null,
+        event_name: "Manufactured",
+        notes: "Demo event",
+        payload: {}
+      },
+      {
+        event_time: ISODate("2026-03-03T08:00:00Z"),
+        event_type: "TransactionEvent",
+        biz_step: "shipping",
+        disposition: "in_transit",
+        actor_code: "A3",
+        read_point_location_code: "L1",
+        from_location_code: "L1",
+        to_location_code: "L3",
+        related_product_id: null,
+        related_product_global_id: null,
+        quantity: null,
+        unit: null,
+        event_name: "Shipped",
+        notes: "Demo: dispatched to carrier hub",
+        payload: {}
+      },
+      {
+        event_time: ISODate("2026-03-04T12:00:00Z"),
+        event_type: "ObjectEvent",
+        biz_step: "receiving",
+        disposition: "in_transit",
+        actor_code: "A3",
+        read_point_location_code: "L3",
+        from_location_code: null,
+        to_location_code: null,
+        related_product_id: null,
+        related_product_global_id: null,
+        quantity: null,
+        unit: null,
+        event_name: "Received at Hub",
+        notes: "Demo: hub scan",
+        payload: {}
+      },
+      {
+        event_time: ISODate("2026-03-06T15:00:00Z"),
+        event_type: "TransactionEvent",
+        biz_step: "shipping",
+        disposition: "in_transit",
+        actor_code: "A3",
+        read_point_location_code: "L3",
+        from_location_code: "L3",
+        to_location_code: "L2",
+        related_product_id: null,
+        related_product_global_id: null,
+        quantity: null,
+        unit: null,
+        event_name: "Out for delivery",
+        notes: "Demo: delivery to integrator",
+        payload: {}
+      },
+      {
+        event_time: ISODate("2026-03-06T17:00:00Z"),
+        event_type: "ObjectEvent",
+        biz_step: "receiving",
+        disposition: "active",
+        actor_code: "A2",
+        read_point_location_code: "L2",
+        from_location_code: null,
+        to_location_code: null,
+        related_product_id: null,
+        related_product_global_id: null,
+        quantity: null,
+        unit: null,
+        event_name: "Received",
+        notes: "Demo: accepted by integrator",
+        payload: {}
+      },
+      {
+        event_time: ISODate("2026-03-07T10:30:00Z"),
+        event_type: "ObjectEvent",
+        biz_step: "commissioning",
+        disposition: "active",
+        actor_code: "A2",
+        read_point_location_code: "L2",
+        from_location_code: null,
+        to_location_code: null,
+        related_product_id: null,
+        related_product_global_id: null,
+        quantity: null,
+        unit: null,
+        event_name: "Installed / Commissioned",
+        notes: "Demo: commissioning complete",
+        payload: {}
+      }
+    ]
+  },
+  {
+    _id: 2,
+    kind: "Type",
+    global_product_id: "urn:example:product:robotiq:2f-140",
+    manufacturer_name: "Robotiq",
+    model: "2F-140",
+    serial_number: null,
+    year_of_construction: null,
+    product_family: "Parallel Gripper",
+    country_of_origin: "Canada",
+    created_at: ISODate("2026-03-06T15:54:40.987Z"),
+    image_uri: "/images/2f-140.jpg",
+
+    digital_nameplate: {
+      manufacturer_name: "Robotiq",
+      serial_number: null,
+      year_of_construction: null,
+      product_family: "Parallel Gripper",
+      country_of_origin: "Canada"
+    },
+
+    bom_components: [],
+
+    carbon_footprint: [
+      {
+        footprint_kind: "PCF",
+        lifecycle_stage: "Manufacturing",
+        emission_value: null,
+        unit: "kg CO2e",
+        standard: "ISO 14067",
+        boundary: null,
+        reference_period_start: null,
+        reference_period_end: null,
+        method_details: {}
+      },
+      {
+        footprint_kind: "PCF",
+        lifecycle_stage: "Transport",
+        emission_value: null,
+        unit: "kg CO2e",
+        standard: "ISO 14067",
+        boundary: null,
+        reference_period_start: null,
+        reference_period_end: null,
+        method_details: {}
+      },
+      {
+        footprint_kind: "PCF",
+        lifecycle_stage: "Use Phase",
+        emission_value: null,
+        unit: "kg CO2e",
+        standard: "ISO 14067",
+        boundary: null,
+        reference_period_start: null,
+        reference_period_end: null,
+        method_details: {}
+      },
+      {
+        footprint_kind: "PCF",
+        lifecycle_stage: "End of Life",
+        emission_value: null,
+        unit: "kg CO2e",
+        standard: "ISO 14067",
+        boundary: null,
+        reference_period_start: null,
+        reference_period_end: null,
+        method_details: {}
+      }
+    ],
+
+    circularity: {
+      recyclability_rate: null,
+      recycled_content: null,
+      reused_content: null,
+      repairability_score: null,
+      circularity_index: null,
+      notes: "SUBSTITUIR: notas sobre modularidade/reciclabilidade"
+    },
+
+    contacts: [
+      {
+        role_code: "Support",
+        available_time: null,
+        org_name: "Robotiq Support",
+        street: null,
+        zipcode: null,
+        region: null,
+        country: null,
+        notes: "SUBSTITUIR: dados reais",
+        emails: [],
+        phones: [],
+        fax: [],
+        ip_communications: [
+          {
+            link: "SUBSTITUIR: URL suporte",
+            channel_type: "Support portal"
+          }
+        ]
+      }
+    ],
+
+    documents: [
+      {
+        category: "Instruction Manual",
+        title: "Instruction Manual (2F-85/2F-140)",
+        language: "en",
+        version: null,
+        issue_date: null,
+        uri: "https://assets.robotiq.com/website-assets/support_documents/document/2F-85_2F-140_Instruction_Manual_e-Series_PDF_20190206.pdf",
+        mime_type: "application/pdf",
+        checksum: null,
+        notes: null
+      },
+      {
+        category: "Product Sheet",
+        title: "Product Sheet (Adaptive Grippers)",
+        language: "en",
+        version: null,
+        issue_date: null,
+        uri: "https://robotiq.com/hubfs/Product-sheets/Adaptive%20Grippers/Product-sheet-Adaptive-Grippers-EN.pdf",
+        mime_type: "application/pdf",
+        checksum: null,
+        notes: null
+      }
+    ],
+
+    material_composition: [],
+
+    technical_properties: [
+      {
+        area: "Specifications",
+        property_name: "Stroke (adjustable)",
+        semantic_id: null,
+        value_num: 140,
+        value_text: null,
+        unit: "mm",
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Specifications",
+        property_name: "Grip force (adjustable)",
+        semantic_id: null,
+        value_num: null,
+        value_text: "10 to 125",
+        unit: "N",
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Specifications",
+        property_name: "Payload (form-fit)",
+        semantic_id: null,
+        value_num: 2.5,
+        value_text: null,
+        unit: "kg",
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Specifications",
+        property_name: "Payload (friction)",
+        semantic_id: null,
+        value_num: 2.5,
+        value_text: null,
+        unit: "kg",
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Physical",
+        property_name: "Gripper mass",
+        semantic_id: null,
+        value_num: 1,
+        value_text: null,
+        unit: "kg",
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Performance",
+        property_name: "Position resolution (fingertip)",
+        semantic_id: null,
+        value_num: 0.6,
+        value_text: null,
+        unit: "mm",
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Performance",
+        property_name: "Closing speed (adjustable)",
+        semantic_id: null,
+        value_num: null,
+        value_text: "30 to 250",
+        unit: "mm/s",
+        standard_ref: null,
+        notes: null
+      },
+      {
+        area: "Communication",
+        property_name: "Protocol",
+        semantic_id: null,
+        value_num: null,
+        value_text: "Modbus RTU (RS-485)",
+        unit: null,
+        standard_ref: null,
+        notes: null
+      }
+    ],
+
+    supply_chain_actors: [
+      {
+        actor_code: "A1",
+        name: "Robotiq",
+        role: "Manufacturer",
+        website: "https://robotiq.com",
+        country: "Canada",
+        notes: null
+      },
+      {
+        actor_code: "A2",
+        name: "Integrator / Lab",
+        role: "Integrator",
+        website: null,
+        country: "Portugal",
+        notes: null
+      }
+    ],
+
+    locations: [
+      {
+        location_code: "L1",
+        actor_code: "A1",
+        name: "Robotiq Manufacturing Site",
+        address: null,
+        city: "Quebec City",
+        region: null,
+        postal_code: null,
+        country: "Canada",
+        lat: 46.8139,
+        lon: -71.208
+      },
+      {
+        location_code: "L2",
+        actor_code: "A2",
+        name: "Integration Lab",
+        address: null,
+        city: "Lisbon",
+        region: null,
+        postal_code: null,
+        country: "Portugal",
+        lat: 38.7223,
+        lon: -9.1393
+      }
+    ],
+
+    trace_events: [
+      {
+        event_time: ISODate("2026-03-02T09:00:00Z"),
+        event_type: "ObjectEvent",
+        biz_step: "manufacturing",
+        disposition: "active",
+        actor_code: "A1",
+        read_point_location_code: "L1",
+        from_location_code: null,
+        to_location_code: null,
+        related_product_id: null,
+        related_product_global_id: null,
+        quantity: null,
+        unit: null,
+        event_name: "Manufactured",
+        notes: "Demo event",
+        payload: {}
+      },
+      {
+        event_time: ISODate("2026-03-05T10:00:00Z"),
+        event_type: "TransactionEvent",
+        biz_step: "shipping",
+        disposition: "in_transit",
+        actor_code: "A1",
+        read_point_location_code: "L1",
+        from_location_code: "L1",
+        to_location_code: "L2",
+        related_product_id: null,
+        related_product_global_id: null,
+        quantity: null,
+        unit: null,
+        event_name: "Shipped",
+        notes: "Demo: shipped to integrator",
+        payload: {}
+      },
+      {
+        event_time: ISODate("2026-03-06T17:15:00Z"),
+        event_type: "ObjectEvent",
+        biz_step: "receiving",
+        disposition: "active",
+        actor_code: "A2",
+        read_point_location_code: "L2",
+        from_location_code: null,
+        to_location_code: null,
+        related_product_id: null,
+        related_product_global_id: null,
+        quantity: null,
+        unit: null,
+        event_name: "Received",
+        notes: "Demo: received and registered",
+        payload: {}
+      }
+    ]
+  }
+])
+
+db.products.createIndex({ global_product_id: 1 }, { unique: true })
+db.products.createIndex({ serial_number: 1 }, { unique: true, sparse: true })
+db.products.createIndex({ manufacturer_name: 1, model: 1 })

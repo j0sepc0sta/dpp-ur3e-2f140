@@ -1,0 +1,31 @@
+services:
+
+  dpp-app:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file: .env
+    networks: [dpp-net]
+
+  edc-connector:
+    image: edc-controlplane:latest        # built locally by gradlew dockerize
+    ports:
+      - "8181:8181"
+      - "8182:8182"
+      - "8282:8282"
+    environment:
+      WEB_HTTP_DEFAULT_PORT: "8181"
+      WEB_HTTP_DEFAULT_PATH: "/api"
+      WEB_HTTP_MANAGEMENT_PORT: "8182"
+      WEB_HTTP_MANAGEMENT_PATH: "/management"
+      WEB_HTTP_PROTOCOL_PORT: "8282"
+      WEB_HTTP_PROTOCOL_PATH: "/protocol"
+      EDC_PARTICIPANT_ID: "DPP-UR3E-001"
+      EDC_CONNECTOR_NAME: "dpp-ur3e-connector"
+      EDC_DSP_CALLBACK_ADDRESS: "http://edc-connector:8282/protocol"
+      EDC_BACKEND_API_KEY: "${EDC_BACKEND_API_KEY}"
+    networks: [dpp-net]
+
+networks:
+  dpp-net:
+    driver: bridge
