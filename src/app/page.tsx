@@ -1,6 +1,7 @@
 // import ProductCard from "@/components/ProductCard";
 import ProductCard from "@/components/ProductCard";
 import { getAllProducts } from "@/lib/products";
+import { HomeQRCode } from "@/components/HomeQRCode";
 
 export const dynamic = "force-dynamic";
 
@@ -67,6 +68,9 @@ export default async function Home() {
                 management within a Gaia-X compliant architecture.
               </p>
             </div>
+
+		{/* Home QR Code */}
+            <HomeQRCode />
 
             {/* Stats panel */}
             <div className="flex flex-col gap-3 min-w-[200px]">
