@@ -3,10 +3,19 @@ import clientPromise from "@/lib/mongodb";
 const DB_NAME = process.env.MONGODB_DB_NAME || "dpp";
 const COLLECTION_NAME = "products";
 
+// const slugToModel: Record<string, string> = {
+//   ur3e: "UR3e",
+//   "2f-140": "2F-140",
+//   "2f140": "2F-140",
+// };
 const slugToModel: Record<string, string> = {
   ur3e: "UR3e",
+  "ur3e-2": "UR3e-2",
   "2f-140": "2F-140",
   "2f140": "2F-140",
+  "irb-1400": "IRB 1400",
+  "dobot-magician": "Dobot Magician",
+  "mg400": "MG400",
 };
 
 export async function getProductsCollection() {
